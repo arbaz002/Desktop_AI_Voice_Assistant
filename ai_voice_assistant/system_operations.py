@@ -53,7 +53,7 @@ def restart(text,engine,r):
 
 def weather(text,engine,r):
 	apiKey="73bd116f378ab5a0db373abffeb6f408"
-	completeURL="https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=73bd116f378ab5a0db373abffeb6f408"
+	completeURL="https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid="+apiKey
 	response= requests.get(completeURL)
 	data= response.json()
 	print("telling you the current weather report for Mumbai:",engine)

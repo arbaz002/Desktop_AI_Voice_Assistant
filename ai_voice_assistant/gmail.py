@@ -6,7 +6,7 @@ def compose_email(driver,engine,r):
 	subject_box=driver.find_element_by_name("subjectbox")
 	message_box=driver.find_element_by_css_selector("div[aria-label='Message Body']")
 
-	recipient,subject="arbazahmed.addewala@spit.ac.in",""
+	recipient,subject="test@gmail.com" #Your recipient email over here
 	recipient_box.send_keys(recipient)
 	say("What should be the subject of the email: ",engine)
 
@@ -73,11 +73,11 @@ def use_gmail(text,engine,r):
 
 	driver.find_element_by_xpath('/html/body/header/div/div/div/a[2]').click()
 
-	driver.find_element_by_id("identifierId").send_keys("arbazahmed.addewala@spit.ac.in") #Email
+	driver.find_element_by_id("identifierId").send_keys("test@gmail.com") #Your email over here
 	driver.find_element_by_xpath('//button[@jscontroller="soHxf"]').click()
 
 	driver.implicitly_wait(15)
-	driver.find_element_by_name("password").send_keys("spit@123") #Password
+	driver.find_element_by_name("password").send_keys("123456") #Password
 	driver.implicitly_wait(5)
 	driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button').click()
 

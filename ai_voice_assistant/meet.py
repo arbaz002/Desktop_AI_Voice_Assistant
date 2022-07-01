@@ -196,11 +196,11 @@ def open_google_meet(text,engine,r):
 		#url="https://accounts.google.com/ServiceLogin?ltmpl=meet&continue=https%3A\%2F\%2Fmeet.google.com\%3Fhs%3D193&"
 		driver.find_element_by_xpath('//a[@event-action="sign in"]').click()
 
-		driver.find_element_by_id("identifierId").send_keys("arbazahmed.addewala@spit.ac.in")
+		driver.find_element_by_id("identifierId").send_keys("test@gmail.com")  #Your email over here
 		driver.find_element_by_xpath('//button[@jscontroller="soHxf"]').click()
 
 		driver.implicitly_wait(15)
-		driver.find_element_by_name("password").send_keys("spit@123")
+		driver.find_element_by_name("password").send_keys("123456") #Password
 		driver.implicitly_wait(5)
 		driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button').click()
 	except:
